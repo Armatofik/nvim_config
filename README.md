@@ -1,9 +1,17 @@
-**This repo is supposed to used as config by NvChad users!**
-
-- The main nvchad repo (NvChad/NvChad) is used as a plugin by this repo.
-- So you just import its modules , like `require "nvchad.options" , require "nvchad.mappings"`
-- So you can delete the .git from this repo ( when you clone it locally ) or fork it :)
-
-# Credits
-
-1) Lazyvim starter https://github.com/LazyVim/starter as nvchad's starter was inspired by Lazyvim's . It made a lot of things easier!
+1) Install neovim 0.10+ from PreBuilt archive
+```bash
+curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux64.tar.gz
+sudo rm -rf /opt/nvim
+sudo tar -C /opt -xzf nvim-linux64.tar.gz
+```
+2) Install NerdFont in terminal
+3) `sudo apt install ripgrep`
+4) Add nvim binary to zsh (`~/.zshrc`)
+```bash
+export PATH="$PATH:/opt/nvim-linux64/bin"
+```
+5) Install this config
+```
+git clone https://github.com/Armatofik/nvim_config.git ~/.config/nvim
+```
+6) Run `nvim` and `:MasonInstallAll` after finish preInstall
